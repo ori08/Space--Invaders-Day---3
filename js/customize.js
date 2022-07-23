@@ -21,10 +21,10 @@ function markSelectedImg(typeOfImg, imgNum) {
 }
 
 function changeBackgroundImgCell(class_Name, imgNum = 1) {
-    document.body.style.backgroundImage = `url(../img/background${imgNum}.png)`
+    document.body.style.backgroundImage = `url(img/background${imgNum}.png)`
     var elTd = document.querySelectorAll("td")
     elTd.forEach(td => {
-        return td.style.backgroundImage = `url(../img/cell${imgNum}.png)`
+        return td.style.backgroundImage = `url(img/cell${imgNum}.png)`
     })
     markSelectedImg(class_Name, imgNum)
     skin_Img_Num = imgNum
